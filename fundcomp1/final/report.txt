@@ -1,0 +1,76 @@
+David Durkin/John Joyce
+Final Lab Report
+
+     From the user perspective, our program mimics the famous phone app, 
+flappy bird. When the program is run, first it displays a home screen which
+has an oscillating, flapping bird displayed. Then, when the user taps the 
+space bar, the game begins. In the game, the bird appears to move through 
+a series of pairs of pipes which have openings between them at various heights.
+In order to avoid hitting the pipes, the user must press the space bar, which
+causes the bird to "flap," or to move upwards momentarily before falling back 
+towards the ground. Each time the user makes it through a pair of pipes, the 
+score displayed at the top of the screen increases by one. The user's goal is 
+to go through as many pairs of pipes as possible without hitting the ground or 
+one of the pipes. When the user loses, the program displays the score that they
+achieved and a best score from the current session. If the user scored less than 
+20, they get a bronze medal, between 20 and 30, a silver medal, between 30 and 40, 
+a gold medal, and greater than 40, a platinum medal. From the losing screen, the
+user can then choose to play again by clicking on the "play again" button.
+
+	From the programmer's perspective, the program is organized to include a main 
+function, which makes calls to various auxilliary functions in order to execute the
+game. The entire program utilizes the graphics library, "gfx5" in order to display
+the graphics in X11. The first thing that happens in the main function is the 
+initializing of a few variables and the opening of a graphics window. Then two pipe 
+structures are instantiated to be used later in the game. Following this, there is a 
+game loop function, which allows the game to restart if the user hits the play again
+button. In this loop, the pipes structures are initialized using the initializePipe()
+function. Then there is another while loop to display the oscillating bird until the 
+space bar is hit to start the game. In each iteration of this loop, the backgroud is
+printed using the presentHomeScreen() function, the birds coordinates are updated 
+using the stationaryBird function, the bird is drawn using the drawBird() function 
+and then the screen is flushed, cleared, and then paused using a usleep() call. If 
+the user hits the space bar, then this loop is exited. Following the exit from this
+while loop, the program then calls the startGame() function which runs the actual 
+gameplay. In this function there is yet another while loop which runs the animation 
+of the game. Each time this loop runs a variety of things happen. First the screen 
+is cleared using the gfx_clear() function, then the background is drawn using the 
+drawBackground() function. Following this, the same bird is drawn and updated using 
+the drawBird() and updateBird() functions, and the program checks whethere the bird 
+has hit the pipes or the ground, if either of these things occur, the program breaks 
+out of the while loop and thus the startGame() function. The updateBird() function 
+uses physics equations of 2D motion in order to determine the bird's changing 
+position and velocity values from the amount of time that has passed and the 
+acceleration due to gravity. Next, if the user hits the space bar, the program 
+pauses momentarily and the velocity is changed to a negative value in order to 
+simulate the bird flapping upwards agains the positive acceleration of gravity. Then 
+the program checks if the bird's x value is equal to that of one of the pipe's x 
+values. This would mean that the bird has passed through a pair of pipes and the 
+score is thus increased by 1 if this is the case. Next, the pipes are drawn and 
+updated. The pipes are simply two different structs that are both allocated dynamic 
+memory from the heap. Since only two pipes can be on the screen at one time, we 
+reuse the same two pipes repeatedly as they move off of the visible screen. The pipe 
+that leads the second pipe on screen is the 'lead' pipe, while the reailing pipe is 
+the 'trail' pipe. Once the lead pipe moves beyond the bounds of the screen, it 
+becomes the new trail pipe, the trail becoming the current lead pipe. When this 
+occurs, the former leading pipe is reinitialized, with its screen values and a new 
+random height being determined. This constant switching cycle is repeated until the 
+conclusion of the game. Using this structure allows for two constant pieces of 
+dynamic memory to be repeatedly used throughout the duration of the game. Finally, 
+there is a printScore function which prints the value of the current score at the 
+top of the screen during each iteration, and then gfx_flush() and usleep() are 
+utilized, followed by an increase in the time variable for the updateBird() function.
+If the startGame() function is exited, meaning that the user has lost, the score is 
+returned to the main function, and the endGame() function is accessed. This function 
+first makes a call to the presentEndScreen() function, whic prints the end screen 
+using the gfx library. Depending on the user's score in the game, a new high score 
+or the still standing high score is displayed, along with the score corresponding to 
+the user's last attempt. This function also prints out a medal with a bird on it 
+depending on the score that was achieved. The endGame function then waits for the 
+user to click on the play again button, in which case the function exits and the 
+game starts over again at the home screen because of the main game loop in the main 
+function.
+
+	In order to verify that this program worked properly, we ran the program, played 
+the game, and compared it against the original flappy bird game. Our program ended 
+up performing very well and playing avery close to exactly the same as the original.
