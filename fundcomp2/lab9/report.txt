@@ -1,0 +1,9 @@
+David Durkin
+Fundamentals of Computing II
+Lab Report Lab 9
+
+From the user's perspective, the binary tree program is run by simply adding a file named pairs.txt to the working directory and then running the program. This creates the entire binary tree.
+
+From the programmers perspective, the tree is built by first creating all of the nodes for each data, label pair using the makeNodes() function. Then the tree is built by using the newFunc() function which sets the parent node equal to that of the child with the largest data value. This goes on continuously until the tree is finished. All of the transversal functions are implemented using recursion and cout statements.
+
+Upon running this program, it appeared to run and set up the tree properly, but I was unable to get my transversal functions to work properly as they often caused seg faults.

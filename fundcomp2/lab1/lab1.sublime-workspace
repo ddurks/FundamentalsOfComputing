@@ -1,0 +1,418 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"draw",
+				"draw_snowflake"
+			],
+			[
+				"size",
+				"size"
+			],
+			[
+				"draw_",
+				"draw_square_spiral"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 223,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "C4Board.h",
+			"settings":
+			{
+				"buffer_size": 339,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "C4Board.cpp",
+			"settings":
+			{
+				"buffer_size": 3987,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "C4Col.cpp",
+			"settings":
+			{
+				"buffer_size": 833,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "C4Col.h",
+			"settings":
+			{
+				"buffer_size": 249,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Makefile",
+			"settings":
+			{
+				"buffer_size": 246,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 360.0,
+		"selected_items":
+		[
+		],
+		"width": 384.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/dldurks/Desktop/programming/lab1/main.o",
+		"/Users/dldurks/Desktop/programming/lab1/C4Col.o",
+		"/Users/dldurks/Desktop/programming/prelab/mortgage.h",
+		"/Users/dldurks/Desktop/programming/prelab/mortgage.cpp",
+		"/Users/dldurks/Desktop/programming/prelab/main.cpp",
+		"/Users/dldurks/Desktop/unix/git.md",
+		"/Users/dldurks/Desktop/programming/ls.git",
+		"/Users/dldurks/Desktop/programming/prelab/pi.cpp",
+		"/Users/dldurks/Desktop/programming/final/final.c",
+		"/Users/dldurks/Desktop/programming/final/finalmine.c",
+		"/Users/dldurks/Desktop/programming/Lab9/animate.c",
+		"/Users/dldurks/Desktop/programming/lifelab/glider.txt",
+		"/Users/dldurks/Desktop/programming/lab10/crossword.c",
+		"/Users/dldurks/Desktop/programming/Lab9/carnival.h",
+		"/Users/dldurks/Desktop/programming/Lab9/carnival.c",
+		"/Users/dldurks/Desktop/programming/Lab9/gfx4.h",
+		"/Users/dldurks/Desktop/programming/untitled folder/fractals.c",
+		"/Users/dldurks/Documents/gfx.o",
+		"/Users/dldurks/Desktop/programming/test.c",
+		"/Users/dldurks/tutorials"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"5",
+			"principle",
+			"fill",
+			"x",
+			"malloc",
+			"read_file",
+			"ifp",
+			"adjacent_to",
+			"BOARD_HEIGHT",
+			"BOARD_WIDTH",
+			"inwords",
+			"words",
+			"newwords",
+			"int b",
+			"int a",
+			"20",
+			"15",
+			"rdegrees",
+			".25",
+			"start",
+			".33",
+			".3",
+			".35",
+			".25",
+			"4",
+			"side"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"principal",
+			"from_file",
+			"fp",
+			"find_neighbors",
+			"BHEIGHT",
+			"BWIDTH",
+			"words",
+			"inwords",
+			"MAXLEN",
+			"MAXWORDS",
+			"MAXLEN",
+			"degrees",
+			".33333",
+			"degrees",
+			".34",
+			".33",
+			".3",
+			".35",
+			"5",
+			"((x2-x1)/4)",
+			"((x2-x1)/5)"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.cpp",
+					"settings":
+					{
+						"buffer_size": 223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								181,
+								181
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "C4Board.h",
+					"settings":
+					{
+						"buffer_size": 339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "C4Board.cpp",
+					"settings":
+					{
+						"buffer_size": 3987,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3934,
+								3934
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2205.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "C4Col.cpp",
+					"settings":
+					{
+						"buffer_size": 833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 120.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "C4Col.h",
+					"settings":
+					{
+						"buffer_size": 249,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Makefile",
+					"settings":
+					{
+						"buffer_size": 246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								246,
+								246
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 105.0,
+	"status_bar_visible": true
+}

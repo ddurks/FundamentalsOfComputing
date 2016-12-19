@@ -1,0 +1,15 @@
+David Durkin
+Fund Comp II
+Lab 10 Report
+
+From the user perspective, in order to use the LangFinder program, one first has to include a file named english.txt and spanish.txt, as well as a file named language.txt, which is the file the user would like to determine the language of. Then, the user should just run the program, and it will print out which language it has determined that language.txt is written in.
+
+From the programmer's perspective, the program consists of a class named Language, with both an implementation and a declaration file as well as a main driver file called main.cpp. In the constructor of the Language class, the program reads the strings from all three of the text files into sets. In the case of the language.txt file, however, the strings are first read into a vector so that they can be stripped of capitalization and punctuation. In order to strip the strings, the strip() function is used, which uses the built in function transform() to translate a string to lower case, as well as the removePunc() function which I created using the ispunc() built in function. The only other important function included in the Language class is the findLang function, which calculates the intersection of the language.txt file with the english dictionary and the spanish one, respectively. Depending on which of the two intersections is larger, the program then prints out a statement which reflects which language the file was determined to be in. In the main function there is simply an instantiation of a language object and then a call to the findLang class.
+
+I was able to verify that this program was correct by filling the language.txt file with spanish and english words and then determining if the program made the right selection. In the end I was able to verify that it was working properly.
+
+I determined that each dictionary would only need to have 20 words, but I selected each of the included words carefully. I chose the top 20 most used words in each language, excluding words which were common to both.
+
+The possibilities vector was much less natural and efficient to code than the set, because one needed to check the value of each index every time, instead of only making a simple call to the size function in the case of the set.
+
+I did not find it to be particularly easier to make the sudoku program in C++11, but I only used the auto variable capabilities instead of one of the more advanced functions.

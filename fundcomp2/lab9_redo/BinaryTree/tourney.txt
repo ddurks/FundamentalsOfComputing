@@ -1,0 +1,16 @@
+Kansas 1
+Villanova 2
+Miami 3
+California 4
+Maryland 5
+Arizona 6
+Iowa 7
+Colorado 8
+UCONN 9
+Temple 10
+WichitaState 11
+SouthDakotaState 12
+Hawaii 13
+Buffalo 14
+UNCAsheville 15
+AustinPeay 16

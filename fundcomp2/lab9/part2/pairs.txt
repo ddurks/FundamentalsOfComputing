@@ -1,0 +1,4 @@
+Mario 10
+Luigi 8
+Peach 4
+Yoshi 2

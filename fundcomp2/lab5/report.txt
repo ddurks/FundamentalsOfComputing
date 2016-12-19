@@ -1,0 +1,15 @@
+David Durkin
+Fund Comp II
+Report for lab 5
+
+	From the user perspective, when run, this program displays the starting 
+board which is fetched from a file in the same directory which must be named sodoku.txt. Then it prompts the user for a number and a row and column in which to place it. If it is not possible by the rules of sodoku to place the number in that position, it returns an invalid placement message and prompts the user for input once again. After each placement the program checks if the player has won and it will return a "YOU WON" message and quit if the board has been completed.
+
+	From the programmer's perspective, the entire program is based off of the 
+templated Puzzle class, which also allows for a sodoku board of characters or "wordoku" to be inputted. In the class there is a constructor which reads in a vector in order to store it in the private data member puzzle which is a 2D vector or a vector of vectors. There is also a print function which prints the board, an add function which attempts to add a number to the board, and checkrow, checkcol, checksquare functions which check the row, column, and square respectively to see if a given number can be placed in a given spot. Each one of the check functions returns a 1 if the placement works, a 0 if not. There is also a didWin function which cycles through the board to see if there are any 0s, and returns a 1 if there are no 0s, a 0 if there are still 0s in the board. In the main function, the program first reads in the file for the board and loads it into a puzzle class object names sodoku. Then, it enters a while loop which runs while the play variable is 1. Inside the loop, it prompts the user for a number and a row and column to place it in. Then there is another while loop in which the conditional is that it runs until the add function with the user provided inputs returns a true in that the placement was successful. At the end of the play while loop, the program will display a "YOU WON," update the play variable to 0, and effectively quit the program if the didWin function returns a true.
+
+	I have already included detail on the "how" in the previous 
+paragraph, but in my opinion, what worked well in my program was the way in which I had my add function rely on all of the checking function and return a success or failure, this allowed for the most concise program when I was creating the main driver function. What did not work, however, was the ability to place a 0 on the board when someone made a mistake in solving the board. 
+
+	I was able to verify that this program worked properly by having one of 
+my friends attempt to solve the sodoku puzzle. They were able to solve it and the program acted as expected so I concluded that it did indeed work properly.

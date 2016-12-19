@@ -1,0 +1,24 @@
+//David Durkin
+//Fund Comp II
+//Lab 0 Report
+
+	The user uses the program by editing the main.cpp file. They can input their
+own numbers using the constructor that takes the imputs principal, rate, and payment
+or they could use the default constructor, which provides default numbers for all
+three variables. Then, by calling the credit(), getPrincipal(), and amortize() functions,
+they can update the mortgage using a given value, return the principal, or print out an
+amortization table respectively.
+
+	I built this program utilizing three different files: a mortgage.cpp which holds the
+class direction, a mortgage.h file which holds the function code, and a main.cpp file
+which implements the class and functions. In the mortgage.h file, the credit() function uses
+simple subtraction to update the principlal, the getPrincipal() function uses a simple return
+statement in order to access a private variable from outside the class, and the amortize() 
+function uses a while loop making sure the balance is above zero and if statements 
+controlling the output in order to generate the amortization table for the input variables
+held in the class Mortage.
+
+	In order to check the output of this program, I ran it several times, checking the output
+of the table with what the mortgage formulas and common sense would predict, then I used the
+same inputs as given in the prelab example, and I compared my results against those given.
+Because the outputs matched, I verified that my program was running correctly.

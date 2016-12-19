@@ -1,0 +1,41 @@
+//David Durkin
+//Fund Comp II
+//Report for Lab 2
+
+	From the user perspective, this program operates by first prompting the user
+for 3 different rational numbers, given in numerator/denominator form. Then, it 
+displays the entered numbers in both decimal form and fractional form. Following
+this, it computes three equations, V=IR, Velocity=distance/time, and 
+v = v0 + at, along with taking one of the terms to the power of another term. 
+It then finally displays the solutions to all three of these equations in both
+decimal and fractional form.
+
+	From the programmer's perspective, this program is made up by three files,
+Rational.h, the class declaration file, Rational.cpp, the class implementation
+file, and rationalMain, the driver file which implements the class to build
+the program. In the Rational class there is a constructor, an overloaded
+constructor, 4 different overloaded operators, and a greatest common
+denominator function. Along with these there are two variables for the
+numerator and the denominator and there is a friend function for the overloaded
+cout operator. The default constructor sets both the numerator and the 
+denominator to 1. The overloaded constructor sets the variables to specified
+parameter values, using the gcd function in order to make sure that the rational
+number is fully simplified. It also prints an error if the denominator 
+parameter is 0, since this is not possible. The overloaded operator functions
+all take a Rational object as a parameter and return another Rational object
+they are implemented so that the proper fractional addition, subtraction, 
+multiplication, division, and raising to a power are exectuted on both the 
+numerator and denominator variables. The overloaded cout operator has an
+additional parameter, the ostream, and returns an ostream object, allowing it 
+to print to the screen. The overloaded cout operator returns both the
+fractional form and the decimal form of the inputted rational object. The gcd 
+function simply calculated the gcd. In the rationalMain driver file, all of the
+formatting, and user instructions are carried out, along with proper use of 
+all the overloaded operators, in order to create the actual output of the 
+program.
+
+	I was able to verify that this program works properly by running it many
+different times with various rational number inputs. I then checked the results
+of the equations and such with a calculator in order to verify that the output
+was indeed correct. After running the program many times with many different 
+rational number inputs, I concluded that it works exactly as I had intended.

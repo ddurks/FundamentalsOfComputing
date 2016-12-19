@@ -1,0 +1,9 @@
+David Durkin
+Fundamentals of Computing II
+Lab Report Lab 9
+
+From the user's perspective, the binary tree program is run by simply adding a file named tourney.txt to the working directory and then running the program. This creates the entire tournament binary tree and prints out each round as well as the transversal function outputs. Then, when prompted for a seed, the user need only enter a seed number and the proper team label will be returned.
+
+From the programmers perspective, the tree is built by first creating all of the nodes for each team, seed pair. Following this, a new bracket vector of nodes is updeated for each round using the left and right node logic implemented in the Node.h file. This goes on continuously, with each round containing half the teams that were in the previous round, until there is only one value left in the vector the champion. All of the transversal and search functions are implemented using recursion and cout statements.
+
+In order to verify that my BinaryTree program worked properly, I simply ran it with some NCAA tournament seeds from 2016 and assessed the output in order to verify that it was correct.

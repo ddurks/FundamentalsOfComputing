@@ -1,0 +1,21 @@
+//David Durkin
+//Fund CompII
+//Lab 3 Report.txt
+
+	From the user perspective, this program takes the initialized
+TwoDayPackage and OvernightPackage objects and prints out their data using both member functions and inherited member functions from the Package class.
+
+	From the programmer's perspective, there is a base class, which is Package
+.h, and then there are two derived classes, OvernightPackage, and TwoDayPackage. Within the Package class there is a CalculateCost() function, a getWeight() function and a getName() function, as well as 4 private variables, name, zip, weight, and ozCost(cost per ounce). The CalculateCost function calculates the cost by multiplying ounces times cost per ounce, and the get functions simply return the private variables. The TwoDayPackage class inherits all of the members of the Package class, and then has it's own calculate cost function called CalculateCostwFee() which takes the output of the inherited calculate function from the base class, and then adds the flatFee private data member of the TwoDayPackage class. Then there is the OvernightPackage class, which inherits the members in the same way. It also contains its own Calculate cost function, which uses the output from the CalculateCost() function inherited from the Package class, and adds an additional cost per ounce (extraCostPerOunce) by multiplying it with the inherited getWeight() function. The constructors of both of the classes which inherit Package are set up to initialize both their own private data members as well as the inherited data members of the Package class. The driver function includes the .h files of the inherited classes in order to execute the functions within those classes, both member and inherited.
+
+	I was able to verify that this program worked by running the driver 
+function, and analyzing the output. I saw that the output fit what I had expected and calculated for the shipping costs, so I concluded that the program indeed worked properly.
+
+	You can make a base class abstract and a derived class concrete by 
+creating a base class with virtual member functions, so that it cannot be instantiated, and then implementing a derived class which inherits and uses those functions.
+
+	The Inheritance approach is much more natural in my opinion. This is 
+because it is much easier to simply use member functions instead of using them with respect to an object data member of a derived class. Also, using inheritance you are able to use member functions from the base class along with your derived class objects, while with composition you cannot use base class member functions with a declared object of the derived class. Overall, it is just more seemless and natural to use inheritance as opposed to composition.
+
+	A pure virtual function is one which must be overwritten by any concrete 
+derived class. Where as a standard virtual function doesn't have to be. This distinction is made bcause in a pure abstract class, there consists only pure virtual functions, and therefore they all need to be overwritten in a derived class. This relationship forces a sort of contract between the creator of the class and the users, which is an important part of object-oriented programming.

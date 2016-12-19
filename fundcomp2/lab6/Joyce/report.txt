@@ -1,0 +1,8 @@
+David Durkin
+Fund Comp II
+Lab 6 Report
+
+	 The user uses the program by simply includeing a file named "Sudoku.txt" in the
+same directory as the program itself, and then running the program.
+
+	Internally, this program works

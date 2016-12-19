@@ -1,0 +1,41 @@
+David Durkin
+Fundamentals of Computing II
+Lab 1 Report
+
+Note: I spoke with Professor Emrich, and he told me that it was alright if I submit
+this slightly late. I had forgotten to turn this in on time, and for some reason had
+assumed that the report was due a day later as it had been in Fund Comp I.
+
+
+	From the user's perspective, the program works by first asking if they want
+to play against AI or play in two player mode. Then, once an option is selected,
+the board is displayed, and player 1 is prompted for a column to put a disk in. 
+Once the column is selected, the board is updated with the new disc. Following 
+that, in 2 player mode, player 2 is prompted, or in AI mode, the AI makes a
+random move. This is repeated until the program detects 4 in a row in any 
+direction. if 4 in a row is detected, then the player who has one is displayed as
+well as the winning game board.
+
+	From the programmer's perspective, the program is built using two main classes
+, a C4Col class which controls each individual column, and a C4Board class, which 
+controls the entire board and involves an array of C4Col class objects. In the C4Col
+class, there is an isFull() function which returns a 1 if a column object is full, a
+0 if it is not, a getDisc() function which returns a disc of a certain index in the
+column, a getMaxDiscs() function which returns the max amount of discs in a column,
+and an addDisc() function which adds a specified character to the column. In the 
+C4Board classs, there is a display() function, which displays the current board, using
+an array of column objects as well as the individual column arrays within the C4Col 
+class. There is also a play() class, which uses a while loop, various cout statements,
+and the display() function to simulate the playing of the game, with a turn integer
+keeping track of which player's turn it is. Additionally, there is a didWin() 
+function which tests the sort of 2D array all the way through in order to determine if
+a player has won. This is also implemented in the play() function. Finally, for extra
+credit, I added an aiPlay() function, also used within play(), which simply returns
+a random column number as long as said column number is not full. In the play() 
+function, this replaces player 2 if the user has chosen to play against AI.
+
+	I was able to determine that the program was working properly by playing through 
+game many different times. I attempted to create as many different winning 4 in a 
+row's as possible, vertical, horizontal, and all kinds of diagonals, in different 
+parts of the board. I also played against the AI to ensure that it did not do 
+anything unexpected. Overall, I was able to verify that the program worked as expected.
